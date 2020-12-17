@@ -5,7 +5,7 @@ import Storage from '@aws-amplify/storage';
 import { CLIENT_ID, setVoteForPoll } from './utils/localStorageInfo';
 import { onUpdateByID } from './gql/subscriptions';
 import { getPoll } from './gql/queries';
-import { upVote } from './gql/mutations';
+import { upVote } from './graphql/mutations';
 import Candidates from './Candidates';
 import actionTypes from './actionTypes';
 
@@ -130,7 +130,7 @@ export default function Poll() {
       console.log('error upvoting: ', err);
     }
   }
-  
+
   if (state.loading) return <h2>Loading...</h2>
 
   return (

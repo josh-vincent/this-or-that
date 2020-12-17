@@ -1,7 +1,7 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onUpdateById = /* GraphQL */ `
+export const onUpdateByID = /* GraphQL */ `
   subscription OnUpdateById($id: ID!) {
     onUpdateByID(id: $id) {
       id

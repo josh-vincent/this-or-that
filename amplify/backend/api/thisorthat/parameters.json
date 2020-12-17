@@ -1,5 +1,11 @@
 {
     "AppSyncApiName": "thisorthat",
     "DynamoDBBillingMode": "PAY_PER_REQUEST",
-    "DynamoDBEnableServerSideEncryption": "false"
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "auththisorthatbaf19e52",
+            "Outputs.UserPoolId"
+        ]
+    }
 }

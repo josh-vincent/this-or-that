@@ -4,7 +4,7 @@ import Storage from '@aws-amplify/storage';
 import { Link } from 'react-router-dom';
 import { itemsByType } from './gql/queries';
 import { onUpdateByID } from './gql/subscriptions';
-import { upVote } from './gql/mutations';
+import { upVote } from './graphql/mutations';
 import { setVoteForPoll, CLIENT_ID } from './utils/localStorageInfo';
 import Candidates from './Candidates';
 import actionTypes from './actionTypes';

@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "thisorthatd21dc504_identitypool_d21dc504",
-    "allowUnauthenticatedIdentities": true,
-    "resourceNameTruncated": "thisord21dc504",
-    "userPoolName": "thisorthatd21dc504_userpool_d21dc504",
+    "identityPoolName": "thisorthatbaf19e52_identitypool_baf19e52",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "thisorbaf19e52",
+    "userPoolName": "thisorthatbaf19e52_userpool_baf19e52",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,9 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "thisord21dc504_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "thisorbaf19e52_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "resourceName": "thisorthatd21dc504",
+    "sharedId": "baf19e52",
+    "resourceName": "thisorthatbaf19e52",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -44,16 +45,11 @@
             "Arn"
         ]
     },
-    "useDefault": "manual",
+    "useDefault": "default",
+    "usernameAttributes": [
+        "email"
+    ],
     "userPoolGroupList": [],
-    "dependsOn": [],
-    "thirdPartyAuth": false,
-    "userPoolGroups": false,
-    "adminQueries": false,
-    "triggers": "{}",
-    "hostedUI": false,
-    "parentStack": {
-        "Ref": "AWS::StackId"
-    },
-    "permissions": []
+    "serviceName": "Cognito",
+    "dependsOn": []
 }
